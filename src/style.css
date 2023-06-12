@@ -1,0 +1,64 @@
+h1 {
+  font-size: 55px;
+}
+
+h2 h3 h4 {
+  font-size: 30px;
+}
+
+h4 {
+  margin-left: 15px;
+}
+.current-temp-number {
+  font-size: 55px;
+  font-weight: bold;
+}
+.current-temperature {
+  display: block;
+  color: #00000087;
+}
+
+.temp-description {
+  text-transform: capitalize;
+  font-style: italic;
+  font-size: 18px;
+}
+
+.app {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 4px 14px;
+  border-radius: 10px;
+  background: linear-gradient(
+    109.6deg,
+    #119793 11.2%,
+    rgb(154, 214, 212) 55.4%,
+    rgb(255, 233, 171) 100.2%
+  );
+}
+
+.search-box {
+  text-align: right;
+}
+
+.current-icon {
+  color: rgba(0, 0, 0, 0.404);
+  font-size: 55px;
+}
+
+.weekday {
+  margin-left: 80px;
+  font-size: 20px;
+}
+
+.temperature-upcoming {
+  margin-left: 80px;
+  font-size: 18px;
+}
+
+.icons {
+  display: block;
+  margin-left: 80px;
+  color: rgba(0, 0, 0, 0.404);
+  font-size: 55px;
+}
