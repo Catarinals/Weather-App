@@ -62,3 +62,8 @@ h4 {
   color: rgba(0, 0, 0, 0.404);
   font-size: 55px;
 }
+
+.footer {
+  text-align: center;
+  margin: auto;
+}
