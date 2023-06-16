@@ -23,84 +23,81 @@
                 <button type="button" class="btn btn-light btn-outline-dark" id="current-location">Current</button>
         </div>
         </form>
-
-        <div class="row align-items-start">
-            <div class="col current-temperature">
-                <h1><strong id="city-now"></strong></h1>
-                <h2>
-                    <span class="current-temp-number" id="current-temperature"></span>
-                    <span class="units">
-                        <a href="#" id="celsius-link" aria-label="celsius temperature">ºC</a>
-                        |
-                        <a href="#" id="fahrenheit-link" aria-label="fahrenheit temperature">ºF</a>
-                    </span>
-                    <h5 class="temp-description" id="temp-description"></h5>
-                </h2>
-                <div class="more-info">
-                    <ul>
-                        <li>
-                            Humidity: <span id="humidity"></span> %
-                        </li>
-                        <li>
-                            Wind: <span id="wind"></span> m/h
-                        </li>
+        <div class="overview">
+            <div class="row align-items-start">
+                <div class="col current-temperature">
+                    <h1><strong id="city-now"></strong></h1>
+                    <ul class="more-info">
+                        <li>Last updated: <span id="date"></span></li>
+                        <li class="temp-description" id="temp-description">
                     </ul>
                 </div>
-                <div class="col rightSide sideNumber row align-items-center" class="more-info">
-                </div>
-                <h3><span class="border-bottom p-2" id="date"></span></h3>
-                <p></p>
-                <h4>13:00h</h4>
-            </div>
-        </div>
-
-        <div class="container text-center">
-            <div class="row align-items-end">
-                <div class="col border-end">
-                    <span class="weekday">
-                        <strong>Monday</strong></span>
-                    <br />
-                    <span class="temperature-upcoming">20ºC <p></p><i class="fa-solid fa-sun icons"></i>
-                    </span>
-                </div>
-
-                <div class="col border-end">
-                    <span class="weekday">
-                        <strong>Tuesday</strong></span>
-                    <br />
-                    <span class="temperature-upcoming">17ºC <p></p><i class="fa-solid fa-cloud-sun icons"></i>
-                    </span>
-                </div>
-
-                <div class="col border-end">
-                    <span class="weekday">
-                        <strong>Wednesday</strong></span>
-                    <br />
-                    <span class="temperature-upcoming"> 16ºC<p></p><i class="fa-solid fa-cloud-sun-rain icons"></i>
-                    </span>
-                </div>
-
-                <div class="col border-end">
-                    <span class="weekday">
-                        <strong>Thursday</strong></span>
-                    <br />
-                    <span class="temperature-upcoming">18ºC<p></p><i class="fa-solid fa-cloud icons"></i>
-                    </span>
-                </div>
-
-                <div class="col">
-                    <span class="weekday">
-                        <strong>Friday</strong></span>
-                    <br />
-                    <span class="temperature-upcoming">19ºC<p></p><i class="fa-solid fa-sun icons"></i>
-                    </span>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="d-flex weather-temperature">
+                            <img src="" alt="Clear" class="float-left" id="icon" />
+                            <strong id="temperature"></strong><span class="units">
+                                <a href="#" id="celsius-link" aria-label="celsius temperature">ºC</a>
+                                |
+                                <a href="#" id="fahrenheit-link" aria-label="fahrenheit temperature">ºF</a>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <p>
+            <div class="col-6">
+                <ul class="more-info">
+                    <li>Humidity: <span id="humidity"></span> %</li>
+                    <li>Wind: <span id="wind"></span> km/h</li>
+                </ul>
+            </div>
+            <div class="container text-center">
+                <div class="row align-items-end">
+                    <div class="col border-end">
+                        <span class="weekday">
+                            <strong>Monday</strong></span>
+                        <br />
+                        <span class="temperature-upcoming">20ºC <p></p><i class="fa-solid fa-sun icons"></i>
+                        </span>
+                    </div>
 
-    </p>
+                    <div class="col border-end">
+                        <span class="weekday">
+                            <strong>Tuesday</strong></span>
+                        <br />
+                        <span class="temperature-upcoming">17ºC <p></p><i class="fa-solid fa-cloud-sun icons"></i>
+                        </span>
+                    </div>
+
+                    <div class="col border-end">
+                        <span class="weekday">
+                            <strong>Wednesday</strong></span>
+                        <br />
+                        <span class="temperature-upcoming"> 16ºC<p></p><i class="fa-solid fa-cloud-sun-rain icons"></i>
+                        </span>
+                    </div>
+
+                    <div class="col border-end">
+                        <span class="weekday">
+                            <strong>Thursday</strong></span>
+                        <br />
+                        <span class="temperature-upcoming">18ºC<p></p><i class="fa-solid fa-cloud icons"></i>
+                        </span>
+                    </div>
+
+                    <div class="col">
+                        <span class="weekday">
+                            <strong>Friday</strong></span>
+                        <br />
+                        <span class="temperature-upcoming">19ºC<p></p><i class="fa-solid fa-sun icons"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>
+
+        </p>
 </body>
 <footer class="footer">
     <a href="https://github.com/Catarinals/Weather-App">Open source code,</a>
