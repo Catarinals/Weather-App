@@ -2,109 +2,68 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-    <title>weather app ☀️</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/0e8403cae8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="src/style.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <title>weather app ☀️</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/0e8403cae8.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="src/style.css" />
 
 </head>
 
 <body>
-    <div class="container">
-        <div class="app border p-5 mt-5 rounded shadow">
-            <div class="search-box">
-                <form id="search-form">
-                    <input type="search" placeholder="Enter a city" id="enter-city" autocomplete="off" />
-                    <button type="submit" class="btn btn-light btn-outline-dark">Search</button>
-                    <button type="button" class="btn btn-light btn-outline-dark" id="current-location">Current</button>
-            </div>
-            </form>
-            <div class="overview">
-
-                <div class="col updated">
-                    <h1><strong id="city-now"></strong></h1>
-                    <ul class="more-info">
-                        <li>Last updated: <span id="date"></span></li>
-                        <li class="temp-description" id="temp-description">
-                    </ul>
-                </div>
-                <div class="row">
-                    <div class="col-6">
-                        <div class="d-flex weather-temperature">
-                            <img src="" alt="Clear" class="float-left" id="icon" />
-                            <span class="temperature">
-                                <strong id="temperature"></strong></span>
-                            <span class="units">
-                                <a href="#" id="celsius-link" aria-label="celsius temperature" class="active">ºC</a>
-                                |
-                                <a href="#" id="fahrenheit-link" aria-label="fahrenheit temperature">ºF</a>
-                            </span>
-                        </div>
-                    </div>
-                    <br />
-                    <ul class="more-info">
-                        <li>Humidity: <span id="humidity"></span> %</li>
-                        <li>Wind: <span id="wind"></span> km/h</li>
-                    </ul>
-
-                </div>
-                <div class="container text-center">
-                    <div class="row align-items-end">
-                        <div class="col border-end">
-                            <span class="weekday">
-                                <strong>Monday</strong></span>
-                            <br />
-                            <span class="temperature-upcoming">20ºC <p></p><i class="fa-solid fa-sun icons"></i>
-                            </span>
-                        </div>
-
-                        <div class="col border-end">
-                            <span class="weekday">
-                                <strong>Tuesday</strong></span>
-                            <br />
-                            <span class="temperature-upcoming">17ºC <p></p><i class="fa-solid fa-cloud-sun icons"></i>
-                            </span>
-                        </div>
-
-                        <div class="col border-end">
-                            <span class="weekday">
-                                <strong>Wednesday</strong></span>
-                            <br />
-                            <span class="temperature-upcoming"> 16ºC<p></p><i
-                                    class="fa-solid fa-cloud-sun-rain icons"></i>
-                            </span>
-                        </div>
-
-                        <div class="col border-end">
-                            <span class="weekday">
-                                <strong>Thursday</strong></span>
-                            <br />
-                            <span class="temperature-upcoming">18ºC<p></p><i class="fa-solid fa-cloud icons"></i>
-                            </span>
-                        </div>
-
-                        <div class="col">
-                            <span class="weekday">
-                                <strong>Friday</strong></span>
-                            <br />
-                            <span class="temperature-upcoming">19ºC<p></p><i class="fa-solid fa-sun icons"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <div class="container">
+    <div class="app border p-5 mt-5 rounded shadow">
+      <div class="search-box">
+        <form id="search-form">
+          <input type="search" placeholder="Enter a city" id="enter-city" autocomplete="off" />
+          <button type="submit" class="btn btn-light btn-outline-dark">Search</button>
+          <button type="button" class="btn btn-light btn-outline-dark" id="current-location">Current</button>
+      </div>
+      </form>
+      <div class="overview">
+        <div class="col updated">
+          <h1><strong id="city-now"></strong></h1>
+          <ul class="more-info">
+            <li>Last updated: <span id="date"></span></li>
+            <li class="temp-description" id="temp-description">
+          </ul>
         </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="d-flex weather-temperature">
+              <img src="" alt="" class="float-left" id="icon" />
+              <span class="temperature">
+                <strong id="temperature"></strong></span>
+              <span class="units">
+                <a href="#" id="celsius-link" aria-label="celsius temperature" class="active">ºC</a>
+                |
+                <a href="#" id="fahrenheit-link" aria-label="fahrenheit temperature">ºF</a>
+              </span>
+            </div>
+          </div>
+          <div class="col-12">
+            <ul class="more-info">
+              <li>Humidity: <span id="humidity"></span> %</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
+            </ul>
+          </div>
+        </div>
+        <div class="weather-forecast" id="forecast"></div>
+      </div>
+    </div>
+    <footer class="footer">
+      <a href="https://github.com/Catarinals/Weather-App">Open source code,</a>
+      by
+      <a href="https://www.linkedin.com/in/catarinals/"> Catarina Santos </a>
+      and hosted on
+      <a href="https://main--rainbow-tulumba-9d5e1d.netlify.app/">Netlfiy</a>
+    </footer>
+  </div>
+  <script src="src/index.js"></script>
 </body>
-<footer class="footer">
-    <a href="https://github.com/Catarinals/Weather-App">Open source code,</a>
-    by Catarina Santos and hosted on
-    <a href="https://main--rainbow-tulumba-9d5e1d.netlify.app/">Netlfiy</a>
-</footer>
-<script src="src/index.js"></script>
 
 </html>
