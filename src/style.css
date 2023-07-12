@@ -20,6 +20,7 @@ li {
   font-weight: 100;
   line-height: 19px;
 }
+
 li:first-letter {
   text-transform: capitalize;
 }
@@ -61,12 +62,10 @@ li:first-letter {
   margin: 0 auto;
   padding: 4px 14px;
   border-radius: 10px;
-  background: linear-gradient(
-    109.6deg,
-    #119793 11.2%,
-    rgb(154, 214, 212) 55.4%,
-    rgb(255, 233, 171) 100.2%
-  );
+  background: linear-gradient(109.6deg,
+      #119793 11.2%,
+      rgb(154, 214, 212) 55.4%,
+      rgb(255, 233, 171) 100.2%);
 }
 
 .search-box {
@@ -83,6 +82,7 @@ li:first-letter {
   text-align: center;
   font-size: 20px;
 }
+
 
 .weather-forecast-date {
   font-size: 18px;
